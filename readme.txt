@@ -1,0 +1,1 @@
+Voici le labyrinthe pour la compétence 2D.
