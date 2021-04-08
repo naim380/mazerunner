@@ -21,7 +21,7 @@ class Cell {
 
         if (this.posX === 0 && this.posY === 0) {
 
-            $(`.${className}`).css("background-color", "blue").html("Start")
+            $(`.${className}`).css("background-color", "blue grey").html("Start")
         }
         if (this.posX === posEnd && this.posY === posEnd) {
 

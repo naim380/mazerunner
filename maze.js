@@ -21,3 +21,16 @@ class Maze {
     }
 }
 
+BFS (G, s) // G = labyrinthe et s = départ
+→ let Q be queue. //créer une variable Q 
+→ add s to the queue.
+→ mark s as visited.
+while ( Q is not empty )
+→ get next element waiting in the queue, called v, and
+remove it from the queue
+→ if v is winning, return v
+for all neighbours w of v in Graph G
+if w is not visited
+→ add w to the queue
+→ mark w as visited.
+→ return false

@@ -4,16 +4,11 @@
 #container div{
     width:50px;
     height:50px;
-    background-color:rgb(203, 240, 235);
+    background-color:rgb(50, 240, 240);
 
 
 }
 #container{
-    /*width:150px;
-    height:150px;*/
     display: flex;
     flex-wrap: wrap;
-    /*column-width: 100px;*/
-    /*column-count: 3;*/
-
 }
