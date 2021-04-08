@@ -8,11 +8,10 @@ class Cell {
         this.murDroite = murDroite;
         this.murBas = murBas;
         this.murGauche = murGauche;
+        this.posEnd = Math.sqrt(this.lab.length) - 1;
     }
 
     display() {
-        let posEnd = Math.sqrt(this.lab.length) - 1;
-        console.log(posEnd)
         let className = `carre-${this.posX}-${this.posY}`;
         // let walls_str = this.walls.map(elt => elt ? "1px":"0px").join(" ");
         $("#container").append(`<div class = ${className}></div>`);
@@ -27,5 +26,8 @@ class Cell {
 
             $(`.${className}`).css("background-color", "red").html("Goal")
         }
+    }
+    winning() {
+        return (this.posX === this.posEnd && this.posY === this.posEnd);
     }
 }
