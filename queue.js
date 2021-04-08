@@ -3,8 +3,7 @@ class Queue {
         this.container = []
     }
 
-    display()
-    {
+    display() {
         console.log(this.container)
     }
 
@@ -19,8 +18,7 @@ class Queue {
     }
 
     // Méthode vérifie si une file d'attente est vide en vérifiant en fonction de la taille du tableau
-    isEmpty(){
+    isEmpty() {
         return this.container.length === 0;
     }
-
 }

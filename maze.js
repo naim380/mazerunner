@@ -1,6 +1,5 @@
 class Maze {
     constructor(taille, exemple) {
-        // this.lab = lab.map(cell_desc => new Cell(cell_desc.posX, cell_desc.posY, cell_desc.walls));
         this.lab = data[taille][exemple];
         this.labCells = [];
     }
@@ -22,7 +21,7 @@ class Maze {
         }
     }
 
-    neighbours(Cell) {
+    neighbours(cell) {
         //créer un tableau qui contient les voisins
         let voisins = [];
         //déterminer la position des murs (true ou false)
@@ -84,7 +83,5 @@ class Maze {
             //→ return false
 
         }
-
     }
-
 }

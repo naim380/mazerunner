@@ -22,7 +22,7 @@ class Cell {
 
             $(`.${className}`).css("background-color", "blue grey").html("Start")
         }
-        if (this.posX === posEnd && this.posY === posEnd) {
+        if (this.posX === this.posEnd && this.posY === this.posEnd) {
 
             $(`.${className}`).css("background-color", "red").html("Goal")
         }
