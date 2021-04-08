@@ -4,6 +4,7 @@ class Maze {
         this.lab = data[taille][exemple];
         this.labCells = [];
     }
+
     display() {
         let tall = 50;
         let size_maze = Math.sqrt(this.lab.length) * tall;
@@ -15,22 +16,27 @@ class Maze {
             console.log(walls);
             let item = new Cell(posX, posY, walls, this.lab, ...walls_str);
             this.labCells.push(item);
-            item.display();            
-            $(`#container`).css({ 'width': size_maze, 'height': size_maze });
+            item.display();
+            $(`#container`).css({'width': size_maze, 'height': size_maze});
         }
     }
+
+    //BFS (G, s) // G = labyrinthe et s = départ
+    bfs(lab, start) {
+//→ let Q be queue. //créer une variable Q
+        let Q = new Queue()
+//→ add s to the queue.
+//→ mark s as visited.
+//while ( Q is not empty )
+//→ get next element waiting in the queue, called v, and
+//remove it from the queue
+//→ if v is winning, return v
+//for all neighbours w of v in Graph G
+//if w is not visited
+//→ add w to the queue
+//→ mark w as visited.
+//→ return false
+    }
+
 }
 
-BFS (G, s) // G = labyrinthe et s = départ
-→ let Q be queue. //créer une variable Q 
-→ add s to the queue.
-→ mark s as visited.
-while ( Q is not empty )
-→ get next element waiting in the queue, called v, and
-remove it from the queue
-→ if v is winning, return v
-for all neighbours w of v in Graph G
-if w is not visited
-→ add w to the queue
-→ mark w as visited.
-→ return false

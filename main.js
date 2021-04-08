@@ -10,4 +10,5 @@ const randomEx = 'ex-' + getRandomLaby(0, 2) + ''
 let labyrinthe = new Maze (randomCase,randomEx);
 labyrinthe.display();
 labyrinthe.labCells;
+labyrinthe.bfs(labyrinthe,labyrinthe.labCells[0]);
 console.log(labyrinthe.labCells);
