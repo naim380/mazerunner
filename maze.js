@@ -6,6 +6,7 @@ class Maze {
     }
 
     display() {
+        //taille des cellules
         let tall = 50;
         let size_maze = Math.sqrt(this.lab.length) * tall;
         for (let i = 0; i < this.lab.length; i++) {
